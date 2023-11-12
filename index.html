@@ -37,6 +37,11 @@
               <a class="link" href="">Contacts</a>
             </li>
           </ul>
+          <button class="burger-button" type="button">
+            <svg class="burger-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
         </nav>
         <address class="contacts">
           <ul class="menu-address">
@@ -122,6 +127,7 @@
           <ul class="menu-team">
             <li class="menu-team-list">
               <img
+                srcset="./images/mark@2x.jpg"
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -165,6 +171,7 @@
 
             <li class="menu-team-list">
               <img
+                srcset="./images/tom@2x.jpg"
                 src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -208,6 +215,7 @@
 
             <li class="menu-team-list">
               <img
+                srcset="./images/camila@2x.jpg"
                 src="./images/camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -250,6 +258,7 @@
             </li>
             <li class="menu-team-list">
               <img
+                srcset="./images/daniel@2x.jpg"
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -300,10 +309,13 @@
             <li class="menu-portflio-item">
               <div class="overlay">
                 <img
-                  src="./images/banking-app.jpg"
+                  srcset="
+                    ./images/mobile-images/banking-app-mobile.jpg    288w,
+                    ./images/mobile-images/banking-app-mobile@2x.jpg 576w
+                  "
+                  src="./images/mobile-images/banking-app-mobile.jpg"
+                  sizes="(max-width: 767px) 288px"
                   alt="Banking App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -320,10 +332,13 @@
             <li class="menu-portflio-item">
               <div class="overlay">
                 <img
-                  src="./images/cashless-payment.jpg"
+                  srcset="
+                    ./images/mobile-images/cashless-payment-mobile@2x.jpg 288w,
+                    ./images/mobile-images/cashless-payment-mobile@2x.jpg 576w
+                  "
+                  src="./images/mobile-images/cashless-payment-mobile.jpg"
+                  sizes="(max-width: 767px) 288px,"
                   alt="Cashless Payment"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -340,10 +355,13 @@
             <li class="menu-portflio-item">
               <div class="overlay">
                 <img
-                  src="./images/meditation-app.jpg"
+                  srcset="
+                    ./images/mobile-images/meditation-app-mobile.jpg    288w,
+                    ./images/mobile-images/meditation-app-mobile@2x.jpg 576w
+                  "
+                  src="./images/mobile-images/meditation-app-mobile.jpg"
+                  sizes="(max-width: 767px) 288px,"
                   alt="Meditatioon App"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -360,10 +378,13 @@
             <li class="menu-portflio-item">
               <div class="overlay">
                 <img
-                  src="./images/taxi-service.jpg"
+                  srcset="
+                    ./images/mobile-images/taxi-service-mobile.jpg    288w,
+                    ./images/mobile-images/taxi-service-mobile@2x.jpg 576w
+                  "
+                  src="./images/mobile-images/taxi-service-mobile.jpg"
+                  sizes="(max-width: 767px) 288px,"
                   alt="Taxi Service"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -380,10 +401,13 @@
             <li class="menu-portflio-item">
               <div class="overlay">
                 <img
-                  src="./images/screen-illustrations.jpg"
+                  srcset="
+                    ./images/mobile-images/screen-illustrations-mobile.jpg    288w,
+                    ./images/mobile-images/screen-illustrations-mobile@2x.jpg 576w
+                  "
+                  src="./images/monbile-images/screen-illustrations-mobile.jpg"
+                  sizes="(max-width: 767px) 288px,"
                   alt="Screen Illustrations"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -400,10 +424,13 @@
             <li class="menu-portflio-item">
               <div class="overlay">
                 <img
-                  src="./images/online-courses.jpg"
+                  srcset="
+                    ./images/mobile-images/online-courses-mobile.jpg 288w,
+                    ./images/mobile-images/online-courses-mobile@2x  576w.jpg
+                  "
+                  src="./images/mobile-images/online-courses-mobile.jpg"
+                  sizes="(max-width: 767px) 288px,"
                   alt="Online Courses"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -487,7 +514,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop ">
       <div class="modal-window">
         <button class="close-btn" type="button">
           <svg class="close-btn-icon" width="8" height="8">
@@ -578,6 +605,75 @@
           <button class="rewiew-form-button" type="submit">Send</button>
         </form>
       </div>
+    </div>
+    <div class="mobile-menu-modal">
+      <div class="container flex">
+        <button class="mobile-modal-close-btn" type="button">
+          <svg class="mobile-modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-main-nav">
+          <ul class="mobile-main-menu">
+            <li class="mobile-main-menu-item">
+              <a class="mobile-link active" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-main-menu-item">
+              <a class="mobile-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-main-menu-item">
+              <a class="mobile-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="mobile-menu-address">
+            <li class="mobile-menu-address-item">
+              <a class="mobile-page-address" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu-address-item">
+              <a class="mobile-page-address" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="social-net-menu-modal">
+          <li class="social-net-menu-modal-item">
+            <a class="social-net-modal-link" href=""
+              ><svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-net-menu-modal-item">
+            <a class="social-net-modal-link" href=""
+              ><svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-net-menu-modal-item">
+            <a class="social-net-modal-link" href=""
+              ><svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-net-menu-modal-item">
+            <a class="social-net-modal-link" href=""
+              ><svg class="footer-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     </div>
   </body>
 </html>
