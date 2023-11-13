@@ -185,11 +185,9 @@ img {
 .mobile-page-address {
   color: #434455;
   font-size: 20px;
-  font-family: Roboto;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.4px;
-  word-wrap: break-word;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu-address-item {
@@ -1016,6 +1014,10 @@ img {
     max-width: 496px;
   }
 
+  .our-benefits {
+    padding-bottom: 20px;
+  }
+
   .menu-benefits {
     display: flex;
     flex-direction: row;
@@ -1030,24 +1032,29 @@ img {
     max-width: 552px;
   }
 
+  .menu-team:last-child {
+    padding-bottom: 40px;
+  }
+
   .menu-portfolio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 72px;
   }
 
   .menu-portflio-item {
     max-width: 356px;
+    max-height: 420px;
+  }
+
+  .menu-portflio-item:last-child {
+    margin-bottom: 96px;
   }
 
   .portfolio-container {
     width: 356px;
-    margin-bottom: 72px;
-  }
-
-  .menu-portflio-item:last-child {
-    padding-bottom: 24px;
   }
 
   /* =================/MAIN STYLES====================== */
@@ -1165,6 +1172,7 @@ img {
 
   .menu-portfolio {
     row-gap: 40px;
+    margin-bottom: 120px;
   }
 
   .overlay {
@@ -1196,7 +1204,12 @@ img {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   }
-   .portfolio-container {
+
+  .menu-portflio-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .portfolio-container {
     margin-bottom: 0;
   }
 
@@ -1219,26 +1232,6 @@ img {
   .footer-text {
     width: 264px;
   }
+  /* =================/FOOTER STYLES=========================*/
 }
-
-/* =================/FOOTER STYLES======================
-
-* =================BACKDROP STYLES======================*/
-
-/* =================/BACKDROP STYLES====================== */
-
-/* =================HEADER STYLES====================== */
-
-/* =================/HEADER STYLES====================== */
-
-/*==================MAIN STYLES=========================*/
-
-/* =================/MAIN STYLES====================== */
-
-/* =================FOOTER STYLES====================== */
-
-/* =================/FOOTER STYLES======================
-
-* =================BACKDROP STYLES======================*/
-
-/* =================/BACKDROP STYLES====================== */
+/* -----------------/DEKSTOP STYLES----------------------- */
