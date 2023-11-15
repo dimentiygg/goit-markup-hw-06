@@ -349,12 +349,10 @@ img {
   margin: 0 auto;
 }
 
-.menu-benefits-item {
-  margin-bottom: 72px;
-}
-
-.menu-benefits-item:last-of-type {
-  margin-bottom: 0;
+.menu-benefits {
+  display: flex;
+  flex-direction: column;
+  row-gap: 72px;
 }
 
 .staff {
@@ -382,7 +380,6 @@ img {
   padding-bottom: 32px;
   background-color: #ffffff;
   width: 264px;
-  margin-bottom: 72px;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -455,7 +452,7 @@ img {
 
 .portfolio {
   padding-top: 96px;
-  margin-bottom: 96px;
+  padding-bottom: 96px;
 }
 
 .title-portfolio {
@@ -538,7 +535,6 @@ img {
 
 .page-footer {
   background-color: #2e2f42;
-  display: flex;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -633,8 +629,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding-left: 16px;
-  color: #ffffff;
   margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .footer-form-input::placeholder {
@@ -944,6 +940,7 @@ img {
   .menu-address {
     display: flex;
     flex-direction: column;
+    row-gap: 12px;
   }
 
   .contacts {
@@ -1039,15 +1036,15 @@ img {
     max-width: 496px;
   }
 
-  .our-benefits {
-    padding-bottom: 20px;
+  .title-benefits {
+    text-align: left;
   }
 
   .menu-benefits {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 72px 24px;
     justify-content: center;
   }
 
@@ -1085,11 +1082,6 @@ img {
 
   .menu-portflio-item {
     max-width: 356px;
-    max-height: 420px;
-  }
-
-  .menu-portflio-item:last-child {
-    margin-bottom: 96px;
   }
 
   .portfolio-container {
@@ -1115,6 +1107,10 @@ img {
     column-gap: 24px;
   }
 
+  .footer-form-input {
+    margin: 0;
+  }
+
   .second-container {
     align-items: start;
     margin-bottom: 0;
@@ -1130,6 +1126,7 @@ img {
     display: flex;
     align-items: start;
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   /* =================/FOOTER STYLES======================*/
@@ -1151,6 +1148,12 @@ img {
 
   .logo {
     margin-right: 76px;
+  }
+
+  .page-address {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
 
   .menu-address {
@@ -1197,11 +1200,14 @@ img {
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
-    margin-right: 24px;
   }
 
   .menu-benefits {
     flex-wrap: nowrap;
+  }
+
+  .menu-benefits-item {
+    width: 264px;
   }
 
   .title-benefits {
@@ -1235,7 +1241,6 @@ img {
 
   .menu-portfolio {
     row-gap: 40px;
-    margin-bottom: 120px;
   }
 
   .overlay {
@@ -1283,13 +1288,14 @@ img {
     margin-right: 120px;
   }
 
-  .footer-menu-social-net {
-    margin-right: 88px;
-  }
-
   .footer-container {
     justify-content: flex-start;
     flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .social-net-container {
+    margin-right: 80px;
   }
 
   .footer-text {
